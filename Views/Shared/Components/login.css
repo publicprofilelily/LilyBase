@@ -1,0 +1,70 @@
+/* custom.css */
+html, body {
+    height: 100%;
+    background-color: #2c2f33;
+    font-family: 'Arial', sans-serif;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #2c2f33;
+}
+
+.card {
+    border-radius: 1rem;
+    background-color: #23272a;
+    color: white;
+}
+
+.card-header {
+    background-color: #e50914;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.form-control {
+    border-radius: 2rem;
+    background-color: #2c2f33;
+    border: 1px solid #444;
+    color: white;
+}
+
+.form-control:focus {
+    background-color: #2c2f33;
+    color: white;
+    border-color: #e50914;
+    box-shadow: none;
+}
+
+.btn-block {
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.btn-danger {
+    background-color: #e50914;
+    border: none;
+}
+
+.btn-light {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ddd;
+}
+
+.btn-light:hover {
+    background-color: #ddd;
+}
+
+.alert-danger {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.25rem;
+  

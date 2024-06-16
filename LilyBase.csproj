@@ -1,0 +1,98 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Cart\**" />
+    <Compile Remove="Data\ViewComponents\**" />
+    <Compile Remove="Views\Cinemas\**" />
+    <Compile Remove="Views\Orders\**" />
+    <Compile Remove="Views\Shared\Components\ShoppingCartSummary\**" />
+    <Content Remove="Data\Cart\**" />
+    <Content Remove="Data\ViewComponents\**" />
+    <Content Remove="Views\Cinemas\**" />
+    <Content Remove="Views\Orders\**" />
+    <Content Remove="Views\Shared\Components\ShoppingCartSummary\**" />
+    <EmbeddedResource Remove="Data\Cart\**" />
+    <EmbeddedResource Remove="Data\ViewComponents\**" />
+    <EmbeddedResource Remove="Views\Cinemas\**" />
+    <EmbeddedResource Remove="Views\Orders\**" />
+    <EmbeddedResource Remove="Views\Shared\Components\ShoppingCartSummary\**" />
+    <None Remove="Data\Cart\**" />
+    <None Remove="Data\ViewComponents\**" />
+    <None Remove="Views\Cinemas\**" />
+    <None Remove="Views\Orders\**" />
+    <None Remove="Views\Shared\Components\ShoppingCartSummary\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\CinemasController.cs" />
+    <Compile Remove="Controllers\OrdersController.cs" />
+    <Compile Remove="Data\Services\CinemasService.cs" />
+    <Compile Remove="Data\Services\ICinemasService.cs" />
+    <Compile Remove="Data\Services\IOrdersService.cs" />
+    <Compile Remove="Data\Services\OrdersService.cs" />
+    <Compile Remove="Data\ViewModels\ShoppingCartVM.cs" />
+    <Compile Remove="Models\Cinema.cs" />
+    <Compile Remove="Models\Order.cs" />
+    <Compile Remove="Models\OrderItem.cs" />
+    <Compile Remove="Models\ShoppingCartItem.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Shared\_MovieDetailsCard.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+    <Folder Include="Views\Shared\Components\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\js\site.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap\LICENSE" />
+    <None Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <None Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\LICENSE.md" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.js" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.min.js" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.min.map" />
+  </ItemGroup>
+
+</Project>
